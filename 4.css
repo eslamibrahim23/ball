@@ -1,0 +1,64 @@
+#all {
+    width: 2000px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    width: 1500px;
+    height: 200px;
+    background-image: url(./grass.png);
+    background-size: content;
+    background-repeat: no-repeat;
+}
+
+#p1 {
+    margin-top: -150px;
+    width: 300px;
+    height: 300px;
+    background-image: url(./player1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#p2 {
+    margin-top: -160px;
+    width: 300px;
+    height: 400px;
+    background-image: url(./player2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+}
+
+#ball {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-image: url(./Black-Red_Egyptian_Soccer_ball.png);
+    background-size: 100px;
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0, 1.01);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myAnimation {
+    0% {
+        left: 860;
+        transform: rotate(360deg);
+    }
+
+    25% {
+        left: 860;
+    }
+    80% {
+        left: -100;
+    }
+    100% {
+        left: -100;
+        transform: rotate(-720deg);
+    }
+}
